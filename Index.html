@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<script type="module" src="./src/main.js"></script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+
+<body>
+    <div>
+        <button id="toggle-btn">Таймер</button>
+    </div>
+
+    <form id="datecalc">
+        <h3>Калькулятор дат</h3>
+        <label>
+            @@ -21,6 +25,18 @@ <h3>Калькулятор дат</h3>
+            <p id="datecalc__result"></p>
+    </form>
+
+    <div></div>
+    <div id="countdown">
+        <h3>Осталось до конца акции</h3>
+        <div>
+            <p>Дней: <span class="countdown-days">0</span></p>
+            <p>Часов: <span class="countdown-hours">0</span></p>
+            <p>Минут: <span class="countdown-minutes">0</span></p>
+            <p>Секунд: <span class="countdown-seconds">0</span></p>
+        </div>
+        <p id="countdown__result"></p>
+        <div>
+            <button id="countdown-start">Старт</button>&nbsp;&nbsp;&nbsp;<button id="countdown-stop">Стоп</button>
+        </div>
+    </div>
+</body>
+
+</html>
