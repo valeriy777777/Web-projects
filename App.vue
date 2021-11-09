@@ -44,9 +44,10 @@ export default {
       ];
     },
   },
-  created() {
-    this.paymentsList = this.fetchData();
-  },
+  created () {
+  this.$store.commit(setPaymentsListData', this.fetchData())
+}
+
   addNewPayment(data) {
     this.paymentsList = [...this.paymentsList, data];
   },

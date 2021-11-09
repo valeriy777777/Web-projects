@@ -8,6 +8,7 @@
 </template>
  
 <script>
+import { mapMutations } from "vuex";
 export default {
   data() {
     return {
@@ -24,6 +25,11 @@ export default {
       const y = today.getFullYear();
       return `${d}.${m}.${y}`;
     },
+    mapMutations([
+      'setPaymentsListData',
+    ]),
+    getCurrentDate () {}
+
   },
   methods: {
     onSaveClick() {
@@ -32,7 +38,7 @@ export default {
         type: this.type,
         date: this.date || this.getCurrentDate,
       };
-      this.$emit("addNewPayment", data);
+      this.commit('setPaymentsListData', data)
     },
   },
 };
